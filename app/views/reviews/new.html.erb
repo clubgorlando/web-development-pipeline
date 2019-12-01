@@ -1,0 +1,11 @@
+<h4>New Review</h4>
+
+<br />
+<br />
+
+<%= simple_form_for @review do |f| %>
+  <%= f.input :show %>
+  <%= f.input :rating %>
+  <%= f.input :message %>
+  <%= f.submit "CREATE!", class: 'my-btn' %>
+<% end %>
